@@ -33,12 +33,12 @@
             tabPage2 = new TabPage();
             button2 = new Button();
             button1 = new Button();
-            dataGridView1 = new DataGridView();
+            dgvInventory = new DataGridView();
             tabPage3 = new TabPage();
-            button3 = new Button();
+            btnAddNewRam = new Button();
             tabControl1.SuspendLayout();
             tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvInventory).BeginInit();
             tabPage3.SuspendLayout();
             SuspendLayout();
             // 
@@ -47,20 +47,18 @@
             tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
             tabControl1.Controls.Add(tabPage3);
-            tabControl1.Location = new Point(14, 16);
-            tabControl1.Margin = new Padding(3, 4, 3, 4);
+            tabControl1.Location = new Point(12, 12);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(887, 568);
+            tabControl1.Size = new Size(776, 426);
             tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
-            tabPage1.Location = new Point(4, 29);
-            tabPage1.Margin = new Padding(3, 4, 3, 4);
+            tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3, 4, 3, 4);
-            tabPage1.Size = new Size(879, 535);
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(768, 398);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Overview";
             tabPage1.UseVisualStyleBackColor = true;
@@ -69,79 +67,76 @@
             // 
             tabPage2.Controls.Add(button2);
             tabPage2.Controls.Add(button1);
-            tabPage2.Controls.Add(dataGridView1);
-            tabPage2.Location = new Point(4, 29);
-            tabPage2.Margin = new Padding(3, 4, 3, 4);
+            tabPage2.Controls.Add(dgvInventory);
+            tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3, 4, 3, 4);
-            tabPage2.Size = new Size(879, 535);
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(768, 398);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Inventory";
             tabPage2.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.Location = new Point(640, 492);
-            button2.Margin = new Padding(3, 4, 3, 4);
+            button2.Location = new Point(560, 369);
             button2.Name = "button2";
-            button2.Size = new Size(86, 31);
+            button2.Size = new Size(75, 23);
             button2.TabIndex = 2;
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            button1.Location = new Point(785, 492);
-            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Location = new Point(687, 369);
             button1.Name = "button1";
-            button1.Size = new Size(86, 31);
+            button1.Size = new Size(75, 23);
             button1.TabIndex = 1;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
-            // dataGridView1
+            // dgvInventory
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(7, 8);
-            dataGridView1.Margin = new Padding(3, 4, 3, 4);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(864, 448);
-            dataGridView1.TabIndex = 0;
+            dgvInventory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvInventory.Location = new Point(6, 6);
+            dgvInventory.Name = "dgvInventory";
+            dgvInventory.RowHeadersWidth = 51;
+            dgvInventory.Size = new Size(756, 336);
+            dgvInventory.TabIndex = 0;
             // 
             // tabPage3
             // 
-            tabPage3.Controls.Add(button3);
-            tabPage3.Location = new Point(4, 29);
-            tabPage3.Margin = new Padding(3, 4, 3, 4);
+            tabPage3.Controls.Add(btnAddNewRam);
+            tabPage3.Location = new Point(4, 24);
             tabPage3.Name = "tabPage3";
-            tabPage3.Padding = new Padding(3, 4, 3, 4);
-            tabPage3.Size = new Size(879, 535);
+            tabPage3.Padding = new Padding(3);
+            tabPage3.Size = new Size(768, 398);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Add New Item";
             tabPage3.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnAddNewRam
             // 
-            button3.Location = new Point(6, 7);
-            button3.Name = "button3";
-            button3.Size = new Size(193, 29);
-            button3.TabIndex = 0;
-            button3.Text = "Add New RAM";
-            button3.UseVisualStyleBackColor = true;
+            btnAddNewRam.Location = new Point(5, 5);
+            btnAddNewRam.Margin = new Padding(3, 2, 3, 2);
+            btnAddNewRam.Name = "btnAddNewRam";
+            btnAddNewRam.Size = new Size(169, 22);
+            btnAddNewRam.TabIndex = 0;
+            btnAddNewRam.Text = "Add New RAM";
+            btnAddNewRam.UseVisualStyleBackColor = true;
+            btnAddNewRam.Click += btnAddNewRam_Click;
             // 
             // FormFactorAdminDashboard
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(800, 450);
             Controls.Add(tabControl1);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FormFactorAdminDashboard";
             Text = "FormFactor - Admin Dashboard";
             tabControl1.ResumeLayout(false);
             tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvInventory).EndInit();
             tabPage3.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -153,8 +148,8 @@
         private TabPage tabPage2;
         private Button button2;
         private Button button1;
-        private DataGridView dataGridView1;
+        private DataGridView dgvInventory;
         private TabPage tabPage3;
-        private Button button3;
+        private Button btnAddNewRam;
     }
 }

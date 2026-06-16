@@ -17,9 +17,10 @@ namespace FormFactorSystem
 
             if (txtPassword.Text == credentials.password && txtUsername.Text == credentials.username)
             {
-                FormFactorAdminDashboard newForm = new FormFactorAdminDashboard();
-                newForm.Show();
                 this.Hide();
+                FormFactorAdminDashboard newForm = new FormFactorAdminDashboard();
+                var result = newForm.ShowDialog();
+                this.Close();
             }
             else
             {

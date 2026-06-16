@@ -14,5 +14,19 @@ namespace FormFactorSystem
         {
             InitializeComponent();
         }
+
+        private void btnAddNewRam_Click(object sender, EventArgs e)
+        {
+            FormFactorAdminAddNewRAM addNewRAMForm = new FormFactorAdminAddNewRAM();
+            addNewRAMForm.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            RAMDatabase ramdatabase = new RAMDatabase();
+            DataTable ramTable = ramdatabase.GetTable();
+            dgvInventory.AutoGenerateColumns = true;
+            dgvInventory.DataSource = ramTable;
+        }
     }
 }

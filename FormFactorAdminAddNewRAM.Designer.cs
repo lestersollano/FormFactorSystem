@@ -28,12 +28,319 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FormFactorAdminAddNewRAM";
+            groupBox1 = new GroupBox();
+            txtGhz = new TextBox();
+            groupBox2 = new GroupBox();
+            rbDDR2 = new RadioButton();
+            rbDDR3 = new RadioButton();
+            rbDDR4 = new RadioButton();
+            rbDDR5 = new RadioButton();
+            groupBox3 = new GroupBox();
+            rb64 = new RadioButton();
+            rb128 = new RadioButton();
+            rb32 = new RadioButton();
+            rb16 = new RadioButton();
+            rb8 = new RadioButton();
+            rb4 = new RadioButton();
+            rb2 = new RadioButton();
+            rb1 = new RadioButton();
+            groupBox4 = new GroupBox();
+            txtName = new TextBox();
+            numQuantity = new NumericUpDown();
+            groupBox5 = new GroupBox();
+            btnSave = new Button();
+            btnCancel = new Button();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            groupBox3.SuspendLayout();
+            groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)numQuantity).BeginInit();
+            groupBox5.SuspendLayout();
+            SuspendLayout();
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(txtGhz);
+            groupBox1.Location = new Point(12, 12);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(111, 60);
+            groupBox1.TabIndex = 0;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Speed (Ghz)";
+            // 
+            // txtGhz
+            // 
+            txtGhz.Location = new Point(6, 24);
+            txtGhz.Name = "txtGhz";
+            txtGhz.Size = new Size(99, 23);
+            txtGhz.TabIndex = 0;
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(rbDDR2);
+            groupBox2.Controls.Add(rbDDR3);
+            groupBox2.Controls.Add(rbDDR4);
+            groupBox2.Controls.Add(rbDDR5);
+            groupBox2.Location = new Point(12, 78);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(111, 129);
+            groupBox2.TabIndex = 1;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Speed (Version)";
+            // 
+            // rbDDR2
+            // 
+            rbDDR2.AutoSize = true;
+            rbDDR2.Location = new Point(25, 98);
+            rbDDR2.Name = "rbDDR2";
+            rbDDR2.Size = new Size(54, 19);
+            rbDDR2.TabIndex = 3;
+            rbDDR2.TabStop = true;
+            rbDDR2.Text = "DDR2";
+            rbDDR2.UseVisualStyleBackColor = true;
+            // 
+            // rbDDR3
+            // 
+            rbDDR3.AutoSize = true;
+            rbDDR3.Location = new Point(25, 73);
+            rbDDR3.Name = "rbDDR3";
+            rbDDR3.Size = new Size(54, 19);
+            rbDDR3.TabIndex = 2;
+            rbDDR3.TabStop = true;
+            rbDDR3.Text = "DDR3";
+            rbDDR3.UseVisualStyleBackColor = true;
+            // 
+            // rbDDR4
+            // 
+            rbDDR4.AutoSize = true;
+            rbDDR4.Location = new Point(25, 48);
+            rbDDR4.Name = "rbDDR4";
+            rbDDR4.Size = new Size(54, 19);
+            rbDDR4.TabIndex = 1;
+            rbDDR4.TabStop = true;
+            rbDDR4.Text = "DDR4";
+            rbDDR4.UseVisualStyleBackColor = true;
+            // 
+            // rbDDR5
+            // 
+            rbDDR5.AutoSize = true;
+            rbDDR5.Location = new Point(25, 23);
+            rbDDR5.Name = "rbDDR5";
+            rbDDR5.Size = new Size(54, 19);
+            rbDDR5.TabIndex = 0;
+            rbDDR5.TabStop = true;
+            rbDDR5.Text = "DDR5";
+            rbDDR5.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            groupBox3.Controls.Add(rb64);
+            groupBox3.Controls.Add(rb128);
+            groupBox3.Controls.Add(rb32);
+            groupBox3.Controls.Add(rb16);
+            groupBox3.Controls.Add(rb8);
+            groupBox3.Controls.Add(rb4);
+            groupBox3.Controls.Add(rb2);
+            groupBox3.Controls.Add(rb1);
+            groupBox3.Location = new Point(129, 12);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(99, 133);
+            groupBox3.TabIndex = 1;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Capacity (GB)";
+            // 
+            // rb64
+            // 
+            rb64.AutoSize = true;
+            rb64.Location = new Point(43, 72);
+            rb64.Name = "rb64";
+            rb64.Size = new Size(37, 19);
+            rb64.TabIndex = 7;
+            rb64.TabStop = true;
+            rb64.Text = "64";
+            rb64.UseVisualStyleBackColor = true;
+            // 
+            // rb128
+            // 
+            rb128.AutoSize = true;
+            rb128.Location = new Point(43, 97);
+            rb128.Name = "rb128";
+            rb128.Size = new Size(43, 19);
+            rb128.TabIndex = 6;
+            rb128.TabStop = true;
+            rb128.Text = "128";
+            rb128.UseVisualStyleBackColor = true;
+            // 
+            // rb32
+            // 
+            rb32.AutoSize = true;
+            rb32.Location = new Point(43, 47);
+            rb32.Name = "rb32";
+            rb32.Size = new Size(37, 19);
+            rb32.TabIndex = 5;
+            rb32.TabStop = true;
+            rb32.Text = "32";
+            rb32.UseVisualStyleBackColor = true;
+            // 
+            // rb16
+            // 
+            rb16.AutoSize = true;
+            rb16.Location = new Point(43, 22);
+            rb16.Name = "rb16";
+            rb16.Size = new Size(37, 19);
+            rb16.TabIndex = 4;
+            rb16.TabStop = true;
+            rb16.Text = "16";
+            rb16.UseVisualStyleBackColor = true;
+            // 
+            // rb8
+            // 
+            rb8.AutoSize = true;
+            rb8.Location = new Point(6, 97);
+            rb8.Name = "rb8";
+            rb8.Size = new Size(31, 19);
+            rb8.TabIndex = 3;
+            rb8.TabStop = true;
+            rb8.Text = "8";
+            rb8.UseVisualStyleBackColor = true;
+            // 
+            // rb4
+            // 
+            rb4.AutoSize = true;
+            rb4.Location = new Point(6, 72);
+            rb4.Name = "rb4";
+            rb4.Size = new Size(31, 19);
+            rb4.TabIndex = 2;
+            rb4.TabStop = true;
+            rb4.Text = "4";
+            rb4.UseVisualStyleBackColor = true;
+            // 
+            // rb2
+            // 
+            rb2.AutoSize = true;
+            rb2.Location = new Point(6, 47);
+            rb2.Name = "rb2";
+            rb2.Size = new Size(31, 19);
+            rb2.TabIndex = 1;
+            rb2.TabStop = true;
+            rb2.Text = "2";
+            rb2.UseVisualStyleBackColor = true;
+            // 
+            // rb1
+            // 
+            rb1.AutoSize = true;
+            rb1.Location = new Point(6, 22);
+            rb1.Name = "rb1";
+            rb1.Size = new Size(31, 19);
+            rb1.TabIndex = 0;
+            rb1.TabStop = true;
+            rb1.Text = "1";
+            rb1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox4
+            // 
+            groupBox4.Controls.Add(txtName);
+            groupBox4.Location = new Point(12, 213);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new Size(216, 56);
+            groupBox4.TabIndex = 2;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Name";
+            // 
+            // txtName
+            // 
+            txtName.Location = new Point(6, 22);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(204, 23);
+            txtName.TabIndex = 0;
+            // 
+            // numQuantity
+            // 
+            numQuantity.Location = new Point(6, 21);
+            numQuantity.Name = "numQuantity";
+            numQuantity.Size = new Size(204, 23);
+            numQuantity.TabIndex = 3;
+            // 
+            // groupBox5
+            // 
+            groupBox5.Controls.Add(numQuantity);
+            groupBox5.Location = new Point(12, 275);
+            groupBox5.Name = "groupBox5";
+            groupBox5.Size = new Size(216, 56);
+            groupBox5.TabIndex = 4;
+            groupBox5.TabStop = false;
+            groupBox5.Text = "Quantity";
+            // 
+            // btnSave
+            // 
+            btnSave.Location = new Point(153, 337);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(75, 23);
+            btnSave.TabIndex = 5;
+            btnSave.Text = "Save";
+            btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
+            // 
+            // btnCancel
+            // 
+            btnCancel.Location = new Point(72, 337);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(75, 23);
+            btnCancel.TabIndex = 6;
+            btnCancel.Text = "Cancel";
+            btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += btnCancel_Click;
+            // 
+            // FormFactorAdminAddNewRAM
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(241, 370);
+            Controls.Add(btnCancel);
+            Controls.Add(btnSave);
+            Controls.Add(groupBox5);
+            Controls.Add(groupBox4);
+            Controls.Add(groupBox3);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
+            Name = "FormFactorAdminAddNewRAM";
+            Text = "FormFactorAdminAddNewRAM";
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            groupBox4.ResumeLayout(false);
+            groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)numQuantity).EndInit();
+            groupBox5.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private GroupBox groupBox1;
+        private TextBox txtGhz;
+        private GroupBox groupBox2;
+        private RadioButton rbDDR3;
+        private RadioButton rbDDR4;
+        private RadioButton rbDDR5;
+        private GroupBox groupBox3;
+        private RadioButton rbDDR2;
+        private RadioButton rb32;
+        private RadioButton rb16;
+        private RadioButton rb8;
+        private RadioButton rb4;
+        private RadioButton rb2;
+        private RadioButton rb1;
+        private RadioButton rb64;
+        private RadioButton rb128;
+        private GroupBox groupBox4;
+        private TextBox txtName;
+        private NumericUpDown numQuantity;
+        private GroupBox groupBox5;
+        private Button btnSave;
+        private Button btnCancel;
     }
 }
