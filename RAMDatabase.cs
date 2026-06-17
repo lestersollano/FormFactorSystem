@@ -22,7 +22,7 @@ namespace FormFactorSystem
                 using (SqliteCommand command = connection.CreateCommand())
                 {
                     connection.Open();
-                    command.CommandText = "CREATE TABLE IF NOT EXISTS RAM (Id INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT, Capacity INTEGER, Ghz INTEGER, Version TEXT, Quantity INTEGER, Price DECIMAL)";
+                    command.CommandText = "CREATE TABLE IF NOT EXISTS RAM (Id INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT, Capacity INTEGER, Ghz INTEGER, Version TEXT, Quantity INTEGER, Price DECIMAL, Sold INTEGER DEFAULT 0, Reserved INTEGER DEFAULT 0)";
                     command.ExecuteNonQuery();
                 }
             }
@@ -103,7 +103,7 @@ namespace FormFactorSystem
                 using (SqliteCommand command = connection.CreateCommand())
                 {
                     connection.Open();
-                    command.CommandText = "SELECT * FROM RAM";
+                    command.CommandText = "ALTER TABLE ram ADD sold INTEGER DEFAULT 0, reserved INTEGER DEFAULT 0";
                     using (SqliteDataReader reader = command.ExecuteReader())
                     {
                         RAMData.Load(reader);

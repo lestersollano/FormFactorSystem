@@ -216,12 +216,12 @@
             // 
             // textBox2
             // 
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Location = new Point(3, 170);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(291, 23);
-            textBox2.TabIndex = 1;
-            textBox2.UseSystemPasswordChar = true;
+            button2.Location = new Point(187, 162);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 6;
+            button2.Text = "Start";
+            button2.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
@@ -235,11 +235,10 @@
             // 
             // textBox3
             // 
-            textBox3.BorderStyle = BorderStyle.FixedSingle;
-            textBox3.Location = new Point(3, 116);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(291, 23);
-            textBox3.TabIndex = 2;
+            textBox1.Location = new Point(6, 89);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 7;
             // 
             // label11
             // 
