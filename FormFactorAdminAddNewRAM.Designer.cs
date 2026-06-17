@@ -57,7 +57,13 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
+            panel5 = new Panel();
+            panel4 = new Panel();
             panel3 = new Panel();
+            panel6 = new Panel();
+            panel9 = new Panel();
+            panel8 = new Panel();
+            panel7 = new Panel();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -68,7 +74,13 @@
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
+            panel5.SuspendLayout();
+            panel4.SuspendLayout();
             panel3.SuspendLayout();
+            panel6.SuspendLayout();
+            panel9.SuspendLayout();
+            panel8.SuspendLayout();
+            panel7.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
@@ -96,7 +108,7 @@
             groupBox2.Controls.Add(rbDDR4);
             groupBox2.Controls.Add(rbDDR5);
             groupBox2.Font = new Font("Gill Sans MT", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBox2.Location = new Point(157, 15);
+            groupBox2.Location = new Point(14, 10);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(313, 60);
             groupBox2.TabIndex = 1;
@@ -158,9 +170,9 @@
             groupBox3.Controls.Add(rb2);
             groupBox3.Controls.Add(rb1);
             groupBox3.Font = new Font("Gill Sans MT", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBox3.Location = new Point(486, 19);
+            groupBox3.Location = new Point(18, 10);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(344, 56);
+            groupBox3.Size = new Size(344, 60);
             groupBox3.TabIndex = 1;
             groupBox3.TabStop = false;
             groupBox3.Text = "Capacity (GB)";
@@ -256,7 +268,8 @@
             // groupBox4
             // 
             groupBox4.Controls.Add(txtName);
-            groupBox4.Location = new Point(13, 511);
+            groupBox4.Font = new Font("Gill Sans MT", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            groupBox4.Location = new Point(45, 15);
             groupBox4.Name = "groupBox4";
             groupBox4.Size = new Size(216, 56);
             groupBox4.TabIndex = 2;
@@ -281,7 +294,7 @@
             // 
             groupBox5.Controls.Add(numQuantity);
             groupBox5.Font = new Font("Gill Sans MT", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBox5.Location = new Point(31, 329);
+            groupBox5.Location = new Point(87, 15);
             groupBox5.Name = "groupBox5";
             groupBox5.Size = new Size(216, 56);
             groupBox5.TabIndex = 4;
@@ -290,28 +303,37 @@
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(148, 463);
+            btnSave.BackColor = Color.Black;
+            btnSave.FlatStyle = FlatStyle.Popup;
+            btnSave.Font = new Font("Gill Sans MT", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSave.ForeColor = Color.White;
+            btnSave.Location = new Point(604, 413);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(75, 23);
+            btnSave.Size = new Size(149, 35);
             btnSave.TabIndex = 5;
             btnSave.Text = "Save";
-            btnSave.UseVisualStyleBackColor = true;
+            btnSave.UseVisualStyleBackColor = false;
             btnSave.Click += btnSave_Click;
             // 
             // btnCancel
             // 
-            btnCancel.Location = new Point(67, 463);
+            btnCancel.BackColor = Color.Black;
+            btnCancel.FlatStyle = FlatStyle.Popup;
+            btnCancel.Font = new Font("Gill Sans MT", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCancel.ForeColor = Color.White;
+            btnCancel.Location = new Point(759, 413);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(75, 23);
+            btnCancel.Size = new Size(149, 35);
             btnCancel.TabIndex = 6;
             btnCancel.Text = "Cancel";
-            btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.UseVisualStyleBackColor = false;
             btnCancel.Click += btnCancel_Click;
             // 
             // groupBox6
             // 
             groupBox6.Controls.Add(textBox1);
-            groupBox6.Location = new Point(300, 452);
+            groupBox6.Font = new Font("Gill Sans MT", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            groupBox6.Location = new Point(17, 15);
             groupBox6.Name = "groupBox6";
             groupBox6.Size = new Size(135, 48);
             groupBox6.TabIndex = 7;
@@ -331,7 +353,7 @@
             panel1.Controls.Add(label1);
             panel1.Location = new Point(12, 12);
             panel1.Name = "panel1";
-            panel1.Size = new Size(850, 36);
+            panel1.Size = new Size(896, 36);
             panel1.TabIndex = 8;
             // 
             // label1
@@ -350,7 +372,7 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(12, 54);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(850, 153);
+            pictureBox1.Size = new Size(896, 153);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
@@ -359,37 +381,91 @@
             // 
             panel2.BackColor = Color.FromArgb(224, 224, 224);
             panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(panel5);
+            panel2.Controls.Add(panel4);
             panel2.Controls.Add(panel3);
-            panel2.Controls.Add(groupBox2);
-            panel2.Controls.Add(groupBox3);
             panel2.Location = new Point(12, 213);
             panel2.Name = "panel2";
-            panel2.Size = new Size(850, 99);
+            panel2.Size = new Size(896, 99);
             panel2.TabIndex = 10;
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.Silver;
+            panel5.Controls.Add(groupBox3);
+            panel5.Location = new Point(505, 4);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(380, 90);
+            panel5.TabIndex = 12;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.Silver;
+            panel4.Controls.Add(groupBox2);
+            panel4.Location = new Point(169, 4);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(330, 90);
+            panel4.TabIndex = 11;
             // 
             // panel3
             // 
             panel3.BackColor = Color.Silver;
             panel3.Controls.Add(groupBox1);
-            panel3.Location = new Point(6, 5);
+            panel3.Location = new Point(9, 4);
             panel3.Name = "panel3";
             panel3.Size = new Size(154, 89);
             panel3.TabIndex = 2;
+            // 
+            // panel6
+            // 
+            panel6.BackColor = Color.FromArgb(224, 224, 224);
+            panel6.BorderStyle = BorderStyle.FixedSingle;
+            panel6.Controls.Add(panel9);
+            panel6.Controls.Add(panel8);
+            panel6.Controls.Add(panel7);
+            panel6.Location = new Point(12, 316);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(896, 91);
+            panel6.TabIndex = 11;
+            // 
+            // panel9
+            // 
+            panel9.BackColor = Color.Silver;
+            panel9.Controls.Add(groupBox5);
+            panel9.Location = new Point(505, 3);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(380, 83);
+            panel9.TabIndex = 12;
+            // 
+            // panel8
+            // 
+            panel8.BackColor = Color.Silver;
+            panel8.Controls.Add(groupBox4);
+            panel8.Location = new Point(183, 3);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(316, 83);
+            panel8.TabIndex = 12;
+            // 
+            // panel7
+            // 
+            panel7.BackColor = Color.Silver;
+            panel7.Controls.Add(groupBox6);
+            panel7.Location = new Point(9, 3);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(168, 83);
+            panel7.TabIndex = 12;
             // 
             // FormFactorAdminAddNewRAM
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(874, 635);
+            ClientSize = new Size(920, 458);
+            Controls.Add(panel6);
             Controls.Add(panel2);
             Controls.Add(pictureBox1);
             Controls.Add(panel1);
-            Controls.Add(groupBox6);
             Controls.Add(btnCancel);
             Controls.Add(btnSave);
-            Controls.Add(groupBox5);
-            Controls.Add(groupBox4);
             Name = "FormFactorAdminAddNewRAM";
             Text = "FormFactorAdminAddNewRAM";
             groupBox1.ResumeLayout(false);
@@ -408,7 +484,13 @@
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
+            panel5.ResumeLayout(false);
+            panel4.ResumeLayout(false);
             panel3.ResumeLayout(false);
+            panel6.ResumeLayout(false);
+            panel9.ResumeLayout(false);
+            panel8.ResumeLayout(false);
+            panel7.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -443,5 +525,11 @@
         private PictureBox pictureBox1;
         private Panel panel2;
         private Panel panel3;
+        private Panel panel4;
+        private Panel panel5;
+        private Panel panel6;
+        private Panel panel9;
+        private Panel panel8;
+        private Panel panel7;
     }
 }
