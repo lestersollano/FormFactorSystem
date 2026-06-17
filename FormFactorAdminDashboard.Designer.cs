@@ -130,7 +130,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(798, 452);
             Controls.Add(tabControl1);
             Name = "FormFactorAdminDashboard";
             Text = "FormFactor - Admin Dashboard";

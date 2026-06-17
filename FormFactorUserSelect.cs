@@ -5,6 +5,8 @@ namespace FormFactorSystem
         public FormFactorUserSelect()
         {
             InitializeComponent();
+            RAMDatabase ramdatabase = new RAMDatabase();
+            ramdatabase.Initialize();
         }
 
         private void btnLoginAdmin_Click(object sender, EventArgs e)
