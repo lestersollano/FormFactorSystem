@@ -1,6 +1,6 @@
 ﻿namespace FormFactorSystem
 {
-    partial class FormFactorUserSelect
+    partial class UserSelect
     {
         /// <summary>
         ///  Required designer variable.

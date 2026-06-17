@@ -1,8 +1,8 @@
 namespace FormFactorSystem
 {
-    public partial class FormFactorUserSelect : Form
+    public partial class UserSelect : Form
     {
-        public FormFactorUserSelect()
+        public UserSelect()
         {
             InitializeComponent();
             RAMDatabase ramdatabase = new RAMDatabase();
@@ -20,7 +20,7 @@ namespace FormFactorSystem
             if (txtPassword.Text == credentials.password && txtUsername.Text == credentials.username)
             {
                 this.Hide();
-                FormFactorAdminDashboard newForm = new FormFactorAdminDashboard();
+                AdminDashboard newForm = new AdminDashboard();
                 var result = newForm.ShowDialog();
                 this.Close();
             }

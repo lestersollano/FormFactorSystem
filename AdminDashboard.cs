@@ -8,16 +8,16 @@ using System.Windows.Forms;
 
 namespace FormFactorSystem
 {
-    public partial class FormFactorAdminDashboard : Form
+    public partial class AdminDashboard : Form
     {
-        public FormFactorAdminDashboard()
+        public AdminDashboard()
         {
             InitializeComponent();
         }
 
         private void btnAddNewRam_Click(object sender, EventArgs e)
         {
-            FormFactorAdminAddNewRAM addNewRAMForm = new FormFactorAdminAddNewRAM();
+            AdminAddNewRam addNewRAMForm = new AdminAddNewRam();
             addNewRAMForm.ShowDialog();
         }
 
@@ -27,6 +27,11 @@ namespace FormFactorSystem
             DataTable ramTable = ramdatabase.GetTable();
             dgvInventory.AutoGenerateColumns = true;
             dgvInventory.DataSource = ramTable;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

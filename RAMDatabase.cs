@@ -103,7 +103,7 @@ namespace FormFactorSystem
                 using (SqliteCommand command = connection.CreateCommand())
                 {
                     connection.Open();
-                    command.CommandText = "ALTER TABLE ram ADD sold INTEGER DEFAULT 0, reserved INTEGER DEFAULT 0";
+                    command.CommandText = "SELECT * FROM RAM";
                     using (SqliteDataReader reader = command.ExecuteReader())
                     {
                         RAMData.Load(reader);

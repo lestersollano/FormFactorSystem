@@ -1,6 +1,6 @@
 ﻿namespace FormFactorSystem
 {
-    partial class FormFactorAdminDashboard
+    partial class AdminDashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -36,6 +36,7 @@
             dgvInventory = new DataGridView();
             tabPage3 = new TabPage();
             btnAddNewRam = new Button();
+            button3 = new Button();
             tabControl1.SuspendLayout();
             tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvInventory).BeginInit();
@@ -84,6 +85,7 @@
             button2.TabIndex = 2;
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -97,6 +99,7 @@
             // 
             // dgvInventory
             // 
+            dgvInventory.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dgvInventory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvInventory.Location = new Point(6, 6);
             dgvInventory.Name = "dgvInventory";
@@ -106,6 +109,7 @@
             // 
             // tabPage3
             // 
+            tabPage3.Controls.Add(button3);
             tabPage3.Controls.Add(btnAddNewRam);
             tabPage3.Location = new Point(4, 24);
             tabPage3.Name = "tabPage3";
@@ -126,13 +130,22 @@
             btnAddNewRam.UseVisualStyleBackColor = true;
             btnAddNewRam.Click += btnAddNewRam_Click;
             // 
-            // FormFactorAdminDashboard
+            // button3
+            // 
+            button3.Location = new Point(6, 32);
+            button3.Name = "button3";
+            button3.Size = new Size(168, 23);
+            button3.TabIndex = 1;
+            button3.Text = "Add New Motherboard";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // AdminDashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(798, 452);
             Controls.Add(tabControl1);
-            Name = "FormFactorAdminDashboard";
+            Name = "AdminDashboard";
             Text = "FormFactor - Admin Dashboard";
             tabControl1.ResumeLayout(false);
             tabPage2.ResumeLayout(false);
@@ -151,5 +164,6 @@
         private DataGridView dgvInventory;
         private TabPage tabPage3;
         private Button btnAddNewRam;
+        private Button button3;
     }
 }
