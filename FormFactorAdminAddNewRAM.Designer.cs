@@ -52,7 +52,7 @@
             btnSave = new Button();
             btnCancel = new Button();
             groupBox6 = new GroupBox();
-            textBox1 = new TextBox();
+            txtPrice = new TextBox();
             panel1 = new Panel();
             label1 = new Label();
             pictureBox1 = new PictureBox();
@@ -86,7 +86,7 @@
             // groupBox1
             // 
             groupBox1.Controls.Add(txtGhz);
-            groupBox1.Font = new Font("Gill Sans MT", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            groupBox1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox1.Location = new Point(18, 14);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(111, 60);
@@ -98,7 +98,7 @@
             // 
             txtGhz.Location = new Point(6, 22);
             txtGhz.Name = "txtGhz";
-            txtGhz.Size = new Size(99, 23);
+            txtGhz.Size = new Size(99, 22);
             txtGhz.TabIndex = 0;
             // 
             // groupBox2
@@ -107,7 +107,7 @@
             groupBox2.Controls.Add(rbDDR3);
             groupBox2.Controls.Add(rbDDR4);
             groupBox2.Controls.Add(rbDDR5);
-            groupBox2.Font = new Font("Gill Sans MT", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            groupBox2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox2.Location = new Point(14, 10);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(313, 60);
@@ -120,7 +120,7 @@
             rbDDR2.AutoSize = true;
             rbDDR2.Location = new Point(25, 23);
             rbDDR2.Name = "rbDDR2";
-            rbDDR2.Size = new Size(62, 22);
+            rbDDR2.Size = new Size(66, 20);
             rbDDR2.TabIndex = 3;
             rbDDR2.TabStop = true;
             rbDDR2.Text = "DDR2";
@@ -131,7 +131,7 @@
             rbDDR3.AutoSize = true;
             rbDDR3.Location = new Point(95, 23);
             rbDDR3.Name = "rbDDR3";
-            rbDDR3.Size = new Size(62, 22);
+            rbDDR3.Size = new Size(66, 20);
             rbDDR3.TabIndex = 2;
             rbDDR3.TabStop = true;
             rbDDR3.Text = "DDR3";
@@ -142,7 +142,7 @@
             rbDDR4.AutoSize = true;
             rbDDR4.Location = new Point(165, 23);
             rbDDR4.Name = "rbDDR4";
-            rbDDR4.Size = new Size(62, 22);
+            rbDDR4.Size = new Size(66, 20);
             rbDDR4.TabIndex = 1;
             rbDDR4.TabStop = true;
             rbDDR4.Text = "DDR4";
@@ -153,7 +153,7 @@
             rbDDR5.AutoSize = true;
             rbDDR5.Location = new Point(235, 23);
             rbDDR5.Name = "rbDDR5";
-            rbDDR5.Size = new Size(62, 22);
+            rbDDR5.Size = new Size(66, 20);
             rbDDR5.TabIndex = 0;
             rbDDR5.TabStop = true;
             rbDDR5.Text = "DDR5";
@@ -169,7 +169,7 @@
             groupBox3.Controls.Add(rb4);
             groupBox3.Controls.Add(rb2);
             groupBox3.Controls.Add(rb1);
-            groupBox3.Font = new Font("Gill Sans MT", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            groupBox3.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox3.Location = new Point(18, 10);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(344, 60);
@@ -182,7 +182,7 @@
             rb64.AutoSize = true;
             rb64.Location = new Point(245, 22);
             rb64.Name = "rb64";
-            rb64.Size = new Size(40, 22);
+            rb64.Size = new Size(41, 20);
             rb64.TabIndex = 7;
             rb64.TabStop = true;
             rb64.Text = "64";
@@ -193,7 +193,7 @@
             rb128.AutoSize = true;
             rb128.Location = new Point(288, 22);
             rb128.Name = "rb128";
-            rb128.Size = new Size(47, 22);
+            rb128.Size = new Size(49, 20);
             rb128.TabIndex = 6;
             rb128.TabStop = true;
             rb128.Text = "128";
@@ -204,7 +204,7 @@
             rb32.AutoSize = true;
             rb32.Location = new Point(202, 22);
             rb32.Name = "rb32";
-            rb32.Size = new Size(40, 22);
+            rb32.Size = new Size(41, 20);
             rb32.TabIndex = 5;
             rb32.TabStop = true;
             rb32.Text = "32";
@@ -215,7 +215,7 @@
             rb16.AutoSize = true;
             rb16.Location = new Point(159, 22);
             rb16.Name = "rb16";
-            rb16.Size = new Size(40, 22);
+            rb16.Size = new Size(41, 20);
             rb16.TabIndex = 4;
             rb16.TabStop = true;
             rb16.Text = "16";
@@ -226,7 +226,7 @@
             rb8.AutoSize = true;
             rb8.Location = new Point(122, 22);
             rb8.Name = "rb8";
-            rb8.Size = new Size(33, 22);
+            rb8.Size = new Size(33, 20);
             rb8.TabIndex = 3;
             rb8.TabStop = true;
             rb8.Text = "8";
@@ -237,7 +237,7 @@
             rb4.AutoSize = true;
             rb4.Location = new Point(85, 22);
             rb4.Name = "rb4";
-            rb4.Size = new Size(33, 22);
+            rb4.Size = new Size(33, 20);
             rb4.TabIndex = 2;
             rb4.TabStop = true;
             rb4.Text = "4";
@@ -248,7 +248,7 @@
             rb2.AutoSize = true;
             rb2.Location = new Point(48, 22);
             rb2.Name = "rb2";
-            rb2.Size = new Size(33, 22);
+            rb2.Size = new Size(33, 20);
             rb2.TabIndex = 1;
             rb2.TabStop = true;
             rb2.Text = "2";
@@ -259,7 +259,7 @@
             rb1.AutoSize = true;
             rb1.Location = new Point(11, 22);
             rb1.Name = "rb1";
-            rb1.Size = new Size(33, 22);
+            rb1.Size = new Size(33, 20);
             rb1.TabIndex = 0;
             rb1.TabStop = true;
             rb1.Text = "1";
@@ -268,7 +268,7 @@
             // groupBox4
             // 
             groupBox4.Controls.Add(txtName);
-            groupBox4.Font = new Font("Gill Sans MT", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            groupBox4.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox4.Location = new Point(45, 15);
             groupBox4.Name = "groupBox4";
             groupBox4.Size = new Size(216, 56);
@@ -280,20 +280,20 @@
             // 
             txtName.Location = new Point(6, 22);
             txtName.Name = "txtName";
-            txtName.Size = new Size(204, 23);
+            txtName.Size = new Size(204, 22);
             txtName.TabIndex = 0;
             // 
             // numQuantity
             // 
             numQuantity.Location = new Point(6, 21);
             numQuantity.Name = "numQuantity";
-            numQuantity.Size = new Size(204, 23);
+            numQuantity.Size = new Size(204, 22);
             numQuantity.TabIndex = 3;
             // 
             // groupBox5
             // 
             groupBox5.Controls.Add(numQuantity);
-            groupBox5.Font = new Font("Gill Sans MT", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            groupBox5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox5.Location = new Point(87, 15);
             groupBox5.Name = "groupBox5";
             groupBox5.Size = new Size(216, 56);
@@ -305,7 +305,7 @@
             // 
             btnSave.BackColor = Color.Black;
             btnSave.FlatStyle = FlatStyle.Popup;
-            btnSave.Font = new Font("Gill Sans MT", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSave.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSave.ForeColor = Color.White;
             btnSave.Location = new Point(604, 413);
             btnSave.Name = "btnSave";
@@ -319,7 +319,7 @@
             // 
             btnCancel.BackColor = Color.Black;
             btnCancel.FlatStyle = FlatStyle.Popup;
-            btnCancel.Font = new Font("Gill Sans MT", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCancel.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCancel.ForeColor = Color.White;
             btnCancel.Location = new Point(759, 413);
             btnCancel.Name = "btnCancel";
@@ -331,8 +331,8 @@
             // 
             // groupBox6
             // 
-            groupBox6.Controls.Add(textBox1);
-            groupBox6.Font = new Font("Gill Sans MT", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            groupBox6.Controls.Add(txtPrice);
+            groupBox6.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox6.Location = new Point(17, 15);
             groupBox6.Name = "groupBox6";
             groupBox6.Size = new Size(135, 48);
@@ -340,12 +340,12 @@
             groupBox6.TabStop = false;
             groupBox6.Text = "Price";
             // 
-            // textBox1
+            // txtPrice
             // 
-            textBox1.Location = new Point(6, 19);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(123, 23);
-            textBox1.TabIndex = 8;
+            txtPrice.Location = new Point(6, 19);
+            txtPrice.Name = "txtPrice";
+            txtPrice.Size = new Size(123, 22);
+            txtPrice.TabIndex = 8;
             // 
             // panel1
             // 
@@ -359,11 +359,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Gill Sans MT", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
             label1.Location = new Point(6, 9);
             label1.Name = "label1";
-            label1.Size = new Size(105, 18);
+            label1.Size = new Size(109, 16);
             label1.TabIndex = 9;
             label1.Text = "Memory (RAM)";
             // 
@@ -467,7 +467,7 @@
             Controls.Add(btnCancel);
             Controls.Add(btnSave);
             Name = "FormFactorAdminAddNewRAM";
-            Text = "FormFactorAdminAddNewRAM";
+            Text = "FormFactor - Add New RAM";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
@@ -519,7 +519,7 @@
         private Button btnSave;
         private Button btnCancel;
         private GroupBox groupBox6;
-        private TextBox textBox1;
+        private TextBox txtPrice;
         private Panel panel1;
         private Label label1;
         private PictureBox pictureBox1;

@@ -38,6 +38,8 @@
             groupBox2 = new GroupBox();
             button2 = new Button();
             label4 = new Label();
+            textBox1 = new TextBox();
+            label5 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -110,6 +112,8 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(label5);
+            groupBox2.Controls.Add(textBox1);
             groupBox2.Controls.Add(button2);
             groupBox2.Controls.Add(label4);
             groupBox2.Location = new Point(321, 12);
@@ -121,7 +125,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(95, 107);
+            button2.Location = new Point(187, 162);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 6;
@@ -136,6 +140,22 @@
             label4.TabIndex = 6;
             label4.Text = "Users can enter the shop and start building their PC!";
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(6, 89);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 7;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(6, 71);
+            label5.Name = "label5";
+            label5.Size = new Size(81, 15);
+            label5.TabIndex = 8;
+            label5.Text = "Email Address";
+            // 
             // FormFactorUserSelect
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -148,6 +168,7 @@
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -163,5 +184,7 @@
         private GroupBox groupBox2;
         private Label label4;
         private Button button2;
+        private Label label5;
+        private TextBox textBox1;
     }
 }

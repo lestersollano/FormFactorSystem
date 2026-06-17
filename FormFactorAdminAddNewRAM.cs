@@ -20,12 +20,13 @@ namespace FormFactorSystem
         private void btnSave_Click(object sender, EventArgs e)
         {
 
-            if (string.IsNullOrWhiteSpace(txtName.Text) || string.IsNullOrWhiteSpace(txtGhz.Text))
+            if (string.IsNullOrWhiteSpace(txtName.Text) || string.IsNullOrWhiteSpace(txtGhz.Text) || string.IsNullOrWhiteSpace(txtPrice.Text))
             {
                 IncompleteFormAlert();
                 return;
             }
             string name = txtName.Text;
+            double price = Convert.ToDouble(txtPrice.Text);
             int capacity;
             if (rb1.Checked) capacity = 1;
             else if (rb2.Checked) capacity = 2;
@@ -54,7 +55,7 @@ namespace FormFactorSystem
             int quantity = Convert.ToInt32(numQuantity.Value);
 
             RAMDatabase database = new RAMDatabase();
-            database.Add(name, capacity, ghz, version, quantity, 1000.00);
+            database.Add(name, capacity, ghz, version, quantity, price);
 
             this.Close();
         }
