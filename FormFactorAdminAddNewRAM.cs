@@ -54,8 +54,7 @@ namespace FormFactorSystem
             int quantity = Convert.ToInt32(numQuantity.Value);
 
             RAMDatabase database = new RAMDatabase();
-            database.CreateTable();
-            database.Add(name, capacity, ghz, version, quantity);
+            database.Add(name, capacity, ghz, version, quantity, 1000.00);
 
             this.Close();
         }
@@ -63,7 +62,6 @@ namespace FormFactorSystem
         private void btnCancel_Click(object sender, EventArgs e)
         {
             RAMDatabase database = new RAMDatabase();
-            database.DropTable();
             this.Close();
         }
 

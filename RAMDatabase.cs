@@ -8,7 +8,12 @@ namespace FormFactorSystem
 {
     internal class RAMDatabase
     {
-        public string connectionString = "Data Source=RAM.db";
+        public string connectionString = "Data Source=FORMFACTOR.db";
+
+        public void Initialize()
+        {
+            CreateTable();
+        }
 
         public void CreateTable()
         {
@@ -17,7 +22,7 @@ namespace FormFactorSystem
                 using (SqliteCommand command = connection.CreateCommand())
                 {
                     connection.Open();
-                    command.CommandText = "CREATE TABLE IF NOT EXISTS RAM (Id INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT, Capacity INTEGER, Ghz INTEGER, Version TEXT, Quantity INTEGER)";
+                    command.CommandText = "CREATE TABLE IF NOT EXISTS RAM (Id INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT, Capacity INTEGER, Ghz INTEGER, Version TEXT, Quantity INTEGER, Price DECIMAL)";
                     command.ExecuteNonQuery();
                 }
             }
@@ -36,25 +41,26 @@ namespace FormFactorSystem
             }
         }
 
-        public void Add(string name, int capacity, int ghz, string version, int quantity)
+        public void Add(string name, int capacity, int ghz, string version, int quantity, double price)
         {
             using (SqliteConnection connection = new SqliteConnection(connectionString))
             {
                 using (SqliteCommand command = connection.CreateCommand())
                 {
                     connection.Open();
-                    command.CommandText = "INSERT INTO RAM (Name, Capacity, Ghz, Version, Quantity) VALUES (@name, @capacity, @ghz, @version, @quantity)";
+                    command.CommandText = "INSERT INTO RAM (Name, Capacity, Ghz, Version, Quantity, Price) VALUES (@name, @capacity, @ghz, @version, @quantity, @price)";
                     command.Parameters.AddWithValue("@name", name);
                     command.Parameters.AddWithValue("@capacity", capacity);
                     command.Parameters.AddWithValue("@ghz", ghz);
                     command.Parameters.AddWithValue("@version", version);
                     command.Parameters.AddWithValue("@quantity", quantity);
+                    command.Parameters.AddWithValue("@price", price);
                     command.ExecuteNonQuery();
                 }
             }
         }
 
-        public void Update(int id, string name, int capacity, int ghz, int version, int quantity)
+        public void Update(int id, string name, int capacity, int ghz, int version, int quantity, double price)
         {
             using (SqliteConnection connection = new SqliteConnection(connectionString))
             {
