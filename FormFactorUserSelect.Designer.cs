@@ -125,7 +125,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(187, 162);
+            button2.Location = new Point(175, 162);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 6;
@@ -144,7 +144,7 @@
             // 
             textBox1.Location = new Point(6, 89);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
+            textBox1.Size = new Size(266, 23);
             textBox1.TabIndex = 7;
             // 
             // label5
