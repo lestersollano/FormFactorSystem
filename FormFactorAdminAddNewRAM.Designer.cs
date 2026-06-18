@@ -1,6 +1,6 @@
 ﻿namespace FormFactorSystem
 {
-    partial class FormFactorAdminAddNewRAM
+    partial class   FormFactorAdminAddNewRAM
     {
         /// <summary>
         /// Required designer variable.

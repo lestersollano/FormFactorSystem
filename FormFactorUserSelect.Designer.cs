@@ -33,11 +33,6 @@
             textBox1 = new TextBox();
             button2 = new Button();
             flowLayoutPanel1 = new FlowLayoutPanel();
-            panel1 = new Panel();
-            label6 = new Label();
-            panel2 = new Panel();
-            panel3 = new Panel();
-            label8 = new Label();
             panel4 = new Panel();
             button1 = new Button();
             panel5 = new Panel();
@@ -47,12 +42,19 @@
             label10 = new Label();
             textBox3 = new TextBox();
             label11 = new Label();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            label8 = new Label();
+            panel1 = new Panel();
+            label6 = new Label();
+            textBox4 = new TextBox();
+            textBox5 = new TextBox();
             flowLayoutPanel1.SuspendLayout();
-            panel1.SuspendLayout();
-            panel2.SuspendLayout();
-            panel3.SuspendLayout();
             panel4.SuspendLayout();
             panel5.SuspendLayout();
+            panel2.SuspendLayout();
+            panel3.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -77,7 +79,7 @@
             // textBox1
             // 
             textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Location = new Point(3, 118);
+            textBox1.Location = new Point(3, 116);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(291, 23);
             textBox1.TabIndex = 7;
@@ -85,9 +87,9 @@
             // button2
             // 
             button2.Font = new Font("Gill Sans MT", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(198, 203);
+            button2.Location = new Point(187, 162);
             button2.Name = "button2";
-            button2.Size = new Size(96, 31);
+            button2.Size = new Size(75, 23);
             button2.TabIndex = 6;
             button2.Text = "Start";
             button2.UseVisualStyleBackColor = true;
@@ -103,65 +105,12 @@
             flowLayoutPanel1.Size = new Size(614, 254);
             flowLayoutPanel1.TabIndex = 7;
             // 
-            // panel1
-            // 
-            panel1.BackColor = Color.FromArgb(98, 178, 54);
-            panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(label6);
-            panel1.Location = new Point(0, -1);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(614, 60);
-            panel1.TabIndex = 8;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Bauhaus 93", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(183, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(271, 54);
-            label6.TabIndex = 0;
-            label6.Text = "FormFactor";
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.FromArgb(224, 224, 224);
-            panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(button2);
-            panel2.Controls.Add(textBox1);
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(panel3);
-            panel2.Controls.Add(label1);
-            panel2.Location = new Point(309, 3);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(300, 242);
-            panel2.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.Black;
-            panel3.Controls.Add(label8);
-            panel3.Location = new Point(-1, -1);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(300, 38);
-            panel3.TabIndex = 1;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Gill Sans MT", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(95, 9);
-            label8.Name = "label8";
-            label8.Size = new Size(113, 21);
-            label8.TabIndex = 2;
-            label8.Text = "User Shopping";
-            // 
             // panel4
             // 
             panel4.BackColor = Color.FromArgb(224, 224, 224);
             panel4.BorderStyle = BorderStyle.FixedSingle;
+            panel4.Controls.Add(textBox5);
+            panel4.Controls.Add(textBox4);
             panel4.Controls.Add(button1);
             panel4.Controls.Add(panel5);
             panel4.Controls.Add(label9);
@@ -216,12 +165,10 @@
             // 
             // textBox2
             // 
-            button2.Location = new Point(187, 162);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 6;
-            button2.Text = "Start";
-            button2.UseVisualStyleBackColor = true;
+            textBox2.Location = new Point(0, 0);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(100, 23);
+            textBox2.TabIndex = 6;
             // 
             // label10
             // 
@@ -235,10 +182,10 @@
             // 
             // textBox3
             // 
-            textBox1.Location = new Point(6, 89);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 7;
+            textBox3.Location = new Point(0, 0);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(100, 23);
+            textBox3.TabIndex = 7;
             // 
             // label11
             // 
@@ -248,6 +195,75 @@
             label11.Size = new Size(291, 52);
             label11.TabIndex = 0;
             label11.Text = "Admins can enter their credentials here to manage the system.";
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(224, 224, 224);
+            panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(button2);
+            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(label5);
+            panel2.Controls.Add(panel3);
+            panel2.Controls.Add(label1);
+            panel2.Location = new Point(309, 3);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(300, 242);
+            panel2.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.Black;
+            panel3.Controls.Add(label8);
+            panel3.Location = new Point(-1, -1);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(300, 38);
+            panel3.TabIndex = 1;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Gill Sans MT", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(95, 9);
+            label8.Name = "label8";
+            label8.Size = new Size(113, 21);
+            label8.TabIndex = 2;
+            label8.Text = "User Shopping";
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(98, 178, 54);
+            panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(label6);
+            panel1.Location = new Point(0, -1);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(614, 60);
+            panel1.TabIndex = 8;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Bauhaus 93", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(183, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(271, 54);
+            label6.TabIndex = 0;
+            label6.Text = "FormFactor";
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(7, 116);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(287, 23);
+            textBox4.TabIndex = 8;
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(7, 163);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(287, 23);
+            textBox5.TabIndex = 9;
             // 
             // FormFactorUserSelect
             // 
@@ -260,16 +276,16 @@
             Name = "FormFactorUserSelect";
             Text = "FormFactor - Select User";
             flowLayoutPanel1.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -294,5 +310,7 @@
         private Label label10;
         private TextBox textBox3;
         private Label label11;
+        private TextBox textBox5;
+        private TextBox textBox4;
     }
 }
