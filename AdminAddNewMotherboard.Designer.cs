@@ -56,12 +56,22 @@
             rbMicroATX = new RadioButton();
             button1 = new Button();
             button2 = new Button();
+            txtName = new TextBox();
+            groupBox4 = new GroupBox();
+            groupBox7 = new GroupBox();
+            groupBox8 = new GroupBox();
+            txtPrice = new TextBox();
+            numQuantity = new NumericUpDown();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numCapacity).BeginInit();
             groupBox3.SuspendLayout();
             groupBox5.SuspendLayout();
+            groupBox4.SuspendLayout();
+            groupBox7.SuspendLayout();
+            groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)numQuantity).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
@@ -351,11 +361,65 @@
             button2.Text = "Save";
             button2.UseVisualStyleBackColor = true;
             // 
+            // txtName
+            // 
+            txtName.Location = new Point(6, 22);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(188, 23);
+            txtName.TabIndex = 7;
+            // 
+            // groupBox4
+            // 
+            groupBox4.Controls.Add(txtName);
+            groupBox4.Location = new Point(224, 225);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new Size(200, 55);
+            groupBox4.TabIndex = 8;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Name";
+            // 
+            // groupBox7
+            // 
+            groupBox7.Controls.Add(txtPrice);
+            groupBox7.Location = new Point(224, 286);
+            groupBox7.Name = "groupBox7";
+            groupBox7.Size = new Size(200, 54);
+            groupBox7.TabIndex = 9;
+            groupBox7.TabStop = false;
+            groupBox7.Text = "Price";
+            // 
+            // groupBox8
+            // 
+            groupBox8.Controls.Add(numQuantity);
+            groupBox8.Location = new Point(224, 346);
+            groupBox8.Name = "groupBox8";
+            groupBox8.Size = new Size(200, 53);
+            groupBox8.TabIndex = 0;
+            groupBox8.TabStop = false;
+            groupBox8.Text = "Quantity";
+            // 
+            // txtPrice
+            // 
+            txtPrice.Location = new Point(6, 22);
+            txtPrice.Name = "txtPrice";
+            txtPrice.Size = new Size(188, 23);
+            txtPrice.TabIndex = 0;
+            // 
+            // numQuantity
+            // 
+            numQuantity.Location = new Point(6, 22);
+            numQuantity.Name = "numQuantity";
+            numQuantity.Size = new Size(188, 23);
+            numQuantity.TabIndex = 0;
+            // 
             // AdminAddNewMotherboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(443, 450);
+            Controls.Add(groupBox8);
+            Controls.Add(groupBox7);
+            Controls.Add(groupBox4);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(groupBox5);
@@ -375,6 +439,12 @@
             groupBox3.PerformLayout();
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
+            groupBox4.ResumeLayout(false);
+            groupBox4.PerformLayout();
+            groupBox7.ResumeLayout(false);
+            groupBox7.PerformLayout();
+            groupBox8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)numQuantity).EndInit();
             ResumeLayout(false);
         }
 
@@ -409,5 +479,11 @@
         private CheckBox chkM2NVME;
         private Button button1;
         private Button button2;
+        private TextBox txtName;
+        private GroupBox groupBox4;
+        private GroupBox groupBox7;
+        private TextBox txtPrice;
+        private GroupBox groupBox8;
+        private NumericUpDown numQuantity;
     }
 }
