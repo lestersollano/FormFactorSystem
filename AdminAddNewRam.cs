@@ -10,9 +10,9 @@ using Microsoft.Data.Sqlite;
 
 namespace FormFactorSystem
 {
-    public partial class FormFactorAdminAddNewRAM : Form
+    public partial class AdminAddNewRam : Form
     {
-        public FormFactorAdminAddNewRAM()
+        public AdminAddNewRam()
         {
             InitializeComponent();
         }

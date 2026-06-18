@@ -1,6 +1,6 @@
 ﻿namespace FormFactorSystem
 {
-    partial class   FormFactorAdminAddNewRAM
+    partial class FormFactorAdminAddNewRAM
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFactorAdminAddNewRAM));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminAddNewRam));
             groupBox1 = new GroupBox();
             txtGhz = new TextBox();
             groupBox2 = new GroupBox();

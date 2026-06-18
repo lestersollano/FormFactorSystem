@@ -1,8 +1,8 @@
 namespace FormFactorSystem
 {
-    public partial class FormFactorUserSelect : Form
+    public partial class UserSelect : Form
     {
-        public FormFactorUserSelect()
+        public UserSelect()
         {
             InitializeComponent();
             RAMDatabase ramdatabase = new RAMDatabase();
@@ -11,6 +11,14 @@ namespace FormFactorSystem
 
         private void btnLoginAdmin_Click(object sender, EventArgs e)
         {
+
+            // DELETE LATER: This is just for testing purposes to bypass the login screen. Remove this before final submission.
+            this.Hide();
+            AdminDashboard newForm = new AdminDashboard();
+            var result = newForm.ShowDialog();
+            this.Close();
+            return;
+
             var credentials = new
             {
                 username = "admin",
@@ -19,10 +27,10 @@ namespace FormFactorSystem
 
             if (txtPassword.Text == credentials.password && txtUsername.Text == credentials.username)
             {
-                this.Hide();
-                FormFactorAdminDashboard newForm = new FormFactorAdminDashboard();
-                var result = newForm.ShowDialog();
-                this.Close();
+                //this.Hide();
+                //AdminDashboard newForm = new AdminDashboard();
+                //var result = newForm.ShowDialog();
+                //this.Close();
             }
             else
             {
