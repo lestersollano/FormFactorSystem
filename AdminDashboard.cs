@@ -31,7 +31,13 @@ namespace FormFactorSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void btnAddNewMotherboard_Click(object sender, EventArgs e)
+        {
+            AdminAddNewMotherboard adminAddNewMotherboardForm = new AdminAddNewMotherboard();
+            adminAddNewMotherboardForm.ShowDialog();
         }
     }
 }

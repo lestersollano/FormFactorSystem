@@ -35,8 +35,8 @@
             button1 = new Button();
             dgvInventory = new DataGridView();
             tabPage3 = new TabPage();
-            btnAddNewRam = new Button();
             button3 = new Button();
+            btnAddNewRam = new Button();
             tabControl1.SuspendLayout();
             tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvInventory).BeginInit();
@@ -119,6 +119,16 @@
             tabPage3.Text = "Add New Item";
             tabPage3.UseVisualStyleBackColor = true;
             // 
+            // button3
+            // 
+            button3.Location = new Point(6, 32);
+            button3.Name = "button3";
+            button3.Size = new Size(168, 23);
+            button3.TabIndex = 1;
+            button3.Text = "Add New Motherboard";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += btnAddNewMotherboard_Click;
+            // 
             // btnAddNewRam
             // 
             btnAddNewRam.Location = new Point(5, 5);
@@ -129,15 +139,6 @@
             btnAddNewRam.Text = "Add New RAM";
             btnAddNewRam.UseVisualStyleBackColor = true;
             btnAddNewRam.Click += btnAddNewRam_Click;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(6, 32);
-            button3.Name = "button3";
-            button3.Size = new Size(168, 23);
-            button3.TabIndex = 1;
-            button3.Text = "Add New Motherboard";
-            button3.UseVisualStyleBackColor = true;
             // 
             // AdminDashboard
             // 
