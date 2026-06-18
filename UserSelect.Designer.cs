@@ -34,9 +34,6 @@
             button2 = new Button();
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel4 = new Panel();
-            txtPassword = new TextBox();
-            txtUsername = new TextBox();
-            btnLoginAdmin = new Button();
             panel5 = new Panel();
             label7 = new Label();
             label9 = new Label();
@@ -44,12 +41,17 @@
             label10 = new Label();
             textBox3 = new TextBox();
             label11 = new Label();
+            txtPassword = new TextBox();
+            txtUsername = new TextBox();
+            btnLoginAdmin = new Button();
+            button1 = new Button();
+            button3 = new Button();
+            groupBox1 = new GroupBox();
+            label2 = new Label();
             flowLayoutPanel1.SuspendLayout();
             panel4.SuspendLayout();
             panel5.SuspendLayout();
-            panel2.SuspendLayout();
-            panel3.SuspendLayout();
-            panel1.SuspendLayout();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -81,7 +83,7 @@
             // 
             // button2
             // 
-            button2.Font = new Font("Gill Sans MT", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.Location = new Point(198, 203);
             button2.Name = "button2";
             button2.Size = new Size(96, 31);
@@ -94,7 +96,7 @@
             flowLayoutPanel1.BackColor = Color.White;
             flowLayoutPanel1.BorderStyle = BorderStyle.FixedSingle;
             flowLayoutPanel1.Controls.Add(panel4);
-            flowLayoutPanel1.Controls.Add(panel2);
+            flowLayoutPanel1.Controls.Add(groupBox1);
             flowLayoutPanel1.Location = new Point(0, 56);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(614, 254);
@@ -115,31 +117,6 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(300, 242);
             panel4.TabIndex = 6;
-            // 
-            // txtPassword
-            // 
-            txtPassword.Location = new Point(7, 161);
-            txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(287, 23);
-            txtPassword.TabIndex = 9;
-            // 
-            // txtUsername
-            // 
-            txtUsername.Location = new Point(7, 116);
-            txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(287, 23);
-            txtUsername.TabIndex = 8;
-            // 
-            // btnLoginAdmin
-            // 
-            btnLoginAdmin.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnLoginAdmin.Location = new Point(198, 203);
-            btnLoginAdmin.Name = "btnLoginAdmin";
-            btnLoginAdmin.Size = new Size(96, 31);
-            btnLoginAdmin.TabIndex = 5;
-            btnLoginAdmin.Text = "Login";
-            btnLoginAdmin.UseVisualStyleBackColor = true;
-            btnLoginAdmin.Click += btnLoginAdmin_Click;
             // 
             // panel5
             // 
@@ -204,14 +181,76 @@
             label11.TabIndex = 0;
             label11.Text = "Admins can enter their credentials here to manage the system.";
             // 
-            // FormFactorUserSelect
+            // txtPassword
+            // 
+            txtPassword.Location = new Point(7, 161);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(287, 23);
+            txtPassword.TabIndex = 9;
+            // 
+            // txtUsername
+            // 
+            txtUsername.Location = new Point(7, 116);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(287, 23);
+            txtUsername.TabIndex = 8;
+            // 
+            // btnLoginAdmin
+            // 
+            btnLoginAdmin.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLoginAdmin.Location = new Point(198, 203);
+            btnLoginAdmin.Name = "btnLoginAdmin";
+            btnLoginAdmin.Size = new Size(96, 31);
+            btnLoginAdmin.TabIndex = 5;
+            btnLoginAdmin.Text = "Login";
+            btnLoginAdmin.UseVisualStyleBackColor = true;
+            btnLoginAdmin.Click += btnLoginAdmin_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(219, 214);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 8;
+            button1.Text = "Login";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(216, 213);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 23);
+            button3.TabIndex = 9;
+            button3.Text = "Start";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(button3);
+            groupBox1.Location = new Point(309, 3);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(297, 242);
+            groupBox1.TabIndex = 7;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "User Shopping";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(56, 97);
+            label2.Name = "label2";
+            label2.Size = new Size(38, 15);
+            label2.TabIndex = 10;
+            label2.Text = "label2";
+            // 
+            // UserSelect
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(619, 315);
             Controls.Add(flowLayoutPanel1);
-            Controls.Add(panel1);
             Name = "UserSelect";
             Text = "FormFactor - Select User";
             flowLayoutPanel1.ResumeLayout(false);
@@ -219,12 +258,8 @@
             panel4.PerformLayout();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -249,5 +284,11 @@
         private Label label10;
         private TextBox textBox3;
         private Label label11;
+        private TextBox txtPassword;
+        private TextBox txtUsername;
+        private Button button1;
+        private GroupBox groupBox1;
+        private Label label2;
+        private Button button3;
     }
 }

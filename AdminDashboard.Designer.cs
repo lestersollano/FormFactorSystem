@@ -62,6 +62,7 @@
             dgvInventory = new DataGridView();
             menuStrip1 = new MenuStrip();
             fileToolStripMenuItem = new ToolStripMenuItem();
+            exitToolStripMenuItem = new ToolStripMenuItem();
             addNewItemToolStripMenuItem = new ToolStripMenuItem();
             rAMToolStripMenuItem = new ToolStripMenuItem();
             motherboardToolStripMenuItem = new ToolStripMenuItem();
@@ -75,7 +76,6 @@
             changePasswordToolStripMenuItem = new ToolStripMenuItem();
             createNewAdminToolStripMenuItem = new ToolStripMenuItem();
             deleteAccountToolStripMenuItem = new ToolStripMenuItem();
-            exitToolStripMenuItem = new ToolStripMenuItem();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -444,6 +444,12 @@
             fileToolStripMenuItem.Size = new Size(37, 20);
             fileToolStripMenuItem.Text = "File";
             // 
+            // exitToolStripMenuItem
+            // 
+            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            exitToolStripMenuItem.Size = new Size(180, 22);
+            exitToolStripMenuItem.Text = "Exit";
+            // 
             // addNewItemToolStripMenuItem
             // 
             addNewItemToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { rAMToolStripMenuItem, motherboardToolStripMenuItem, cPUToolStripMenuItem, gPUToolStripMenuItem, caseToolStripMenuItem, storageDriveToolStripMenuItem, powerSupplyToolStripMenuItem, cPUCoolerToolStripMenuItem });
@@ -523,12 +529,6 @@
             deleteAccountToolStripMenuItem.Name = "deleteAccountToolStripMenuItem";
             deleteAccountToolStripMenuItem.Size = new Size(180, 22);
             deleteAccountToolStripMenuItem.Text = "Delete Account";
-            // 
-            // exitToolStripMenuItem
-            // 
-            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(180, 22);
-            exitToolStripMenuItem.Text = "Exit";
             // 
             // AdminDashboard
             // 
