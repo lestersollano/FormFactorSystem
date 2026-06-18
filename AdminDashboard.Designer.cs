@@ -37,6 +37,12 @@
             tabPage3 = new TabPage();
             button3 = new Button();
             btnAddNewRam = new Button();
+            button4 = new Button();
+            button5 = new Button();
+            button6 = new Button();
+            button7 = new Button();
+            button8 = new Button();
+            button9 = new Button();
             tabControl1.SuspendLayout();
             tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvInventory).BeginInit();
@@ -109,6 +115,12 @@
             // 
             // tabPage3
             // 
+            tabPage3.Controls.Add(button9);
+            tabPage3.Controls.Add(button8);
+            tabPage3.Controls.Add(button7);
+            tabPage3.Controls.Add(button6);
+            tabPage3.Controls.Add(button5);
+            tabPage3.Controls.Add(button4);
             tabPage3.Controls.Add(button3);
             tabPage3.Controls.Add(btnAddNewRam);
             tabPage3.Location = new Point(4, 24);
@@ -121,7 +133,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(6, 32);
+            button3.Location = new Point(87, 145);
             button3.Name = "button3";
             button3.Size = new Size(168, 23);
             button3.TabIndex = 1;
@@ -131,7 +143,7 @@
             // 
             // btnAddNewRam
             // 
-            btnAddNewRam.Location = new Point(5, 5);
+            btnAddNewRam.Location = new Point(87, 93);
             btnAddNewRam.Margin = new Padding(3, 2, 3, 2);
             btnAddNewRam.Name = "btnAddNewRam";
             btnAddNewRam.Size = new Size(169, 22);
@@ -139,6 +151,60 @@
             btnAddNewRam.Text = "Add New RAM";
             btnAddNewRam.UseVisualStyleBackColor = true;
             btnAddNewRam.Click += btnAddNewRam_Click;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(87, 199);
+            button4.Name = "button4";
+            button4.Size = new Size(168, 23);
+            button4.TabIndex = 2;
+            button4.Text = "Add New Graphics Card";
+            button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(429, 145);
+            button5.Name = "button5";
+            button5.Size = new Size(169, 23);
+            button5.TabIndex = 3;
+            button5.Text = "Add New CPU";
+            button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            button6.Location = new Point(87, 251);
+            button6.Name = "button6";
+            button6.Size = new Size(168, 23);
+            button6.TabIndex = 4;
+            button6.Text = "Add New Case";
+            button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            button7.Location = new Point(429, 93);
+            button7.Name = "button7";
+            button7.Size = new Size(168, 23);
+            button7.TabIndex = 5;
+            button7.Text = "Add New Monitor";
+            button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            button8.Location = new Point(429, 199);
+            button8.Name = "button8";
+            button8.Size = new Size(169, 23);
+            button8.TabIndex = 6;
+            button8.Text = "Add New Drive";
+            button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            button9.Location = new Point(429, 251);
+            button9.Name = "button9";
+            button9.Size = new Size(169, 23);
+            button9.TabIndex = 7;
+            button9.Text = "Add New Power Supply";
+            button9.UseVisualStyleBackColor = true;
             // 
             // AdminDashboard
             // 
@@ -166,5 +232,11 @@
         private TabPage tabPage3;
         private Button btnAddNewRam;
         private Button button3;
+        private Button button9;
+        private Button button8;
+        private Button button7;
+        private Button button6;
+        private Button button5;
+        private Button button4;
     }
 }
