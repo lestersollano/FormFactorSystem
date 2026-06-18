@@ -34,6 +34,8 @@
             button2 = new Button();
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel4 = new Panel();
+            txtPassword = new TextBox();
+            txtUsername = new TextBox();
             btnLoginAdmin = new Button();
             panel5 = new Panel();
             label7 = new Label();
@@ -47,8 +49,6 @@
             label8 = new Label();
             panel1 = new Panel();
             label6 = new Label();
-            txtUsername = new TextBox();
-            txtPassword = new TextBox();
             flowLayoutPanel1.SuspendLayout();
             panel4.SuspendLayout();
             panel5.SuspendLayout();
@@ -79,17 +79,17 @@
             // textBox1
             // 
             textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Location = new Point(6, 89);
+            textBox1.Location = new Point(3, 117);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
+            textBox1.Size = new Size(291, 23);
             textBox1.TabIndex = 7;
             // 
             // button2
             // 
             button2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(187, 162);
+            button2.Location = new Point(192, 203);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
+            button2.Size = new Size(102, 31);
             button2.TabIndex = 6;
             button2.Text = "Start";
             button2.UseVisualStyleBackColor = true;
@@ -122,6 +122,20 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(300, 242);
             panel4.TabIndex = 6;
+            // 
+            // txtPassword
+            // 
+            txtPassword.Location = new Point(7, 161);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(287, 23);
+            txtPassword.TabIndex = 9;
+            // 
+            // txtUsername
+            // 
+            txtUsername.Location = new Point(7, 116);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(287, 23);
+            txtUsername.TabIndex = 8;
             // 
             // btnLoginAdmin
             // 
@@ -251,20 +265,6 @@
             label6.Size = new Size(282, 55);
             label6.TabIndex = 0;
             label6.Text = "FormFactor";
-            // 
-            // txtUsername
-            // 
-            txtUsername.Location = new Point(3, 116);
-            txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(100, 23);
-            txtUsername.TabIndex = 8;
-            // 
-            // txtPassword
-            // 
-            txtPassword.Location = new Point(3, 161);
-            txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(100, 23);
-            txtPassword.TabIndex = 9;
             // 
             // UserSelect
             // 
